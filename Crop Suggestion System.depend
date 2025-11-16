@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1762877828 source:c:\users\azanm\desktop\crop suggestion system\main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+	<queue>
+	<string>
+	<algorithm>
+	<fstream>
+	<limits>
+	<memory>
+	<set>
+	<chrono>
+	<sstream>
+	<iomanip>
+	<cmath>
+	<cctype>
+	<thread>
+	<chrono>
+

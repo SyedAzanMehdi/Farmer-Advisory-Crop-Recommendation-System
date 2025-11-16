@@ -1,0 +1,6 @@
+SoilType,Crop1,Crop2,Crop3,...
+Sandy,Millet,Sunflower,Gram
+Clay,Rice,Sugarcane
+Clay Loam,Sugarcane,Rice,Wheat,Soybean
+Sandy Loam,Cotton,Gram,Sunflower,Soybean
+Loamy,Wheat,Maize,Potato,Tomato,Barley

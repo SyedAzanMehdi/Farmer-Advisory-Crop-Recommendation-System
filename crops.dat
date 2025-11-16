@@ -1,0 +1,13 @@
+CropName,SoilType,MinTemp,MaxTemp,WaterRequirement,MaturityDays,YieldPotential,Season,FertilizerRequirement
+Barley,Loamy,12,25,450,100,2.5,Winter,100
+Cotton,Sandy Loam,20,35,700,180,2,Summer,150
+Gram,Sandy Loam,15,28,350,110,1.2,Winter,60
+Maize,Loamy,15,30,600,90,5,Summer,120
+Millet,Sandy,20,35,300,85,1,Monsoon,50
+Potato,Loamy,15,25,500,90,25,Winter,150
+Rice,Clay,20,35,1200,140,4,Monsoon,100
+Soybean,Clay Loam,20,30,550,110,2.2,Summer,90
+Sugarcane,Clay Loam,15,32,1500,300,70,All,300
+Sunflower,Sandy,18,32,400,100,1.5,All,80
+Tomato,Loamy,18,30,600,85,30,All,100
+Wheat,Loamy,10,25,500,120,3.5,Winter,120
