@@ -1,41 +1,65 @@
 # Farmer Advisory and Crop Recommendation System
 
-This project is a C++–based command-line application designed to assist farmers in making informed decisions about crop selection. The system analyzes environmental factors such as soil type, temperature, rainfall, humidity, and season to generate intelligent crop recommendations. It uses data structures, algorithms, and persistent storage to provide a complete advisory workflow.
+The Farmer Advisory and Crop Recommendation System is a C++17 command-line application designed to help farmers make data-driven crop selection decisions. The system analyzes environmental and agricultural parameters to generate intelligent recommendations using algorithmic scoring models.
 
-# Key Features
+This project demonstrates advanced data structure usage, object-oriented design, and persistent data storage for agricultural decision support simulation.
+
+# Core Features
 # Intelligent Crop Recommendation
 
-Suggests crops based on temperature, rainfall, soil type, and season
+Recommends crops based on:
 
-Utilizes a scoring algorithm to determine suitability
+Temperature
 
-Provides estimated yield predictions
+Rainfall
 
-# Regional Climate Modelling
+Humidity
 
-Stores climate information for each region
+Soil type
 
-Supports comparison between climate-similar regions
+Season compatibility
 
-Enables regional environmental analysis
+Uses a scoring algorithm to rank crop suitability
 
-# Crop Management (BST)
+Provides estimated yield insights based on environmental conditions
 
-Binary Search Tree for storing and retrieving crop information
+# Regional Climate Modeling
 
-Add, search, browse, and view detailed crop profiles
+Maintains climate data for different regions
 
-Supports maturity period, fertilizer requirement, and yield data
+Enables comparison between climate profiles
 
-# Soil-Based Suggestions
+Supports environmental pattern analysis for better recommendations
 
-Maps soil types to suitable crops
+# Crop Information Management (BST Implementation)
 
-Offers soil-specific insights
+Uses Binary Search Tree (BST) for efficient crop storage and retrieval
+
+# Supports:
+
+Adding new crop records
+
+Searching crop profiles
+
+Browsing detailed crop information
+
+Stores crop attributes such as:
+
+Maturity period
+
+Fertilizer requirements
+
+Yield statistics
+
+# Soil-Based Crop Guidance
+
+Maps soil types to compatible crops
+
+Provides soil-specific agricultural insights
 
 # Data Persistence
 
-All data is stored in files, which are automatically created and updated:
+All system data is stored using file handling for long-term persistence:
 
 crops.dat
 
@@ -46,58 +70,47 @@ soil_mapping.dat
 recommendations.log
 
 # System Architecture
-# Component          	Description
-CropBST------------   Stores all crops using a binary search tree
-RegionGraph------------Graph-based climate data and region connectivity
-RecommendationEngine------------Computes suitability scores for crops
-FileHandler------------	 Handles all saving and loading operations
-DataManager------------	Manages initialization and CRUD operations
-DisplayManager------------	Responsible for all formatted output
-InputValidator------------	Ensures safe and reliable user input
-AnimatedText------------	Provides animated introductory text
+
+CropBST – Manages crop records using Binary Search Tree structure
+
+RegionGraph – Represents regional climate relationships using graph modeling
+
+RecommendationEngine – Computes crop suitability scores
+
+FileHandler – Handles persistent storage operations
+
+DataManager – Controls data initialization and CRUD workflows
+
+DisplayManager – Formats system output for usability
+
+InputValidator – Ensures safe user input processing
+
+AnimatedText – Provides interactive console introduction
+
 # Technical Stack
 
-C++17
+C++
 
 Standard Template Library (STL)
 
-OOP principles
+Object-Oriented Programming principles
 
-Graph data structures
+Graph and Tree data structures
 
-Binary Search Trees
+File-based database simulation
 
-File I/O (persistent storage)
+# Recommendation Algorithm Logic
 
-# Build and Run Instructions
-# Compile
-g++ main.cpp -o advisor
+Crop suitability ranking is determined using:
 
-# Execute
-./advisor
+Climate temperature matching
 
-# Project Structure
-/Farmer-Advisory-System
-│── main.cpp
-│── README.md
-│── crops.dat
-│── regions.dat
-│── soil_mapping.dat
-│── recommendations.log
-│── /docs (optional)
+Soil compatibility analysis
 
-# Recommendation Algorithm (Overview)
+Water and rainfall requirement alignment
 
-The suitability score for each crop is calculated using the following criteria:
+Seasonal farming suitability
 
-Temperature suitability
+Expected yield optimization
 
-Soil type compatibility
-
-Rainfall and water requirement matching
-
-Seasonal appropriateness
-
-Yield potential
-
-Crops with higher scores are considered more suitable and are presented at the top of the recommendation list.
+Crops with higher aggregate scores are prioritized in recommendation results.
